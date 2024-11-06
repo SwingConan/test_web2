@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-icons-1.11.3\font\bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-icons-1.11.3\font\bootstrap-icons.min.css"
+    />
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- tạo mã capcha random -->
+  </head>
+  <body>
+    <!-- Main container -->
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <!-- login-container  -->
+      <div class="row border rounded-5 p-3 bg-white shadow box-area">
+        <!-- left box  -->
+        <div class="col-md-6 left-box">
+          <div class="row align-items-center">
+            <form id="signupForm" onsubmit="return validateSignupForm()">
+              <div class="header-text mb-4">
+                <p>Hello, Again</p>
+                <p>We are happy to have you back.</p>
+              </div>
+
+              <!-- Email input -->
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Email Address"
+                />
+              </div>
+              <small id="emailError" class="error-message text-danger"></small>
+
+              <!-- Password input -->
+              <div class="password-container position-relative mb-3">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Password"
+                />
+                <i
+                  class="bi bi-eye-slash password-toggle"
+                  id="togglePassword"
+                ></i>
+              </div>
+
+              <small
+                id="passwordError"
+                class="error-message text-danger"
+              ></small>
+
+              <!-- Confirm Password input -->
+              <div class="password-container position-relative mb-3">
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Confirm Password"
+                />
+                <i
+                  class="bi bi-eye-slash password-toggle"
+                  id="toggleConfirmPassword"
+                ></i>
+              </div>
+              <small
+                id="confirmPasswordError"
+                class="error-message text-danger"
+              ></small>
+
+              <!-- Captcha -->
+              <div class="row align-items-center p-0 m-0">
+                <div class="col-2 mb-3">
+                  <div class="input-group">
+                    <span id="captcha-code" class="fs-6"></span>
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div class="input-group mb-3 ms-2">
+                    <input
+                      type="text"
+                      id="captcha"
+                      class="form-control form-control-lg bg-light fs-6"
+                      placeholder="Enter CAPTCHA"
+                    />
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="refresh-captcha"
+                    >
+                      Refresh CAPTCHA
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <small
+                id="captchaError"
+                class="error-message text-danger"
+              ></small>
+
+              <!-- Sign Up Button -->
+              <div class="input-group mb-3">
+                <button
+                  type="submit"
+                  class="btn text-white btn-lg w-100 fs-6"
+                  style="background-color: blueviolet"
+                >
+                  Sign Up
+                </button>
+              </div>
+
+              <!-- Google Sign In -->
+              <div class="input-group mb-3">
+                <button type="button" class="btn btn-lg btn-light w-100 fs-6">
+                  <img src="../img/login/google.png" width="20px" />
+                  <small>Sign In with Google</small>
+                </button>
+              </div>
+
+              <div class="row">
+                <small
+                  >You have account?
+                  <a href="../html/login.html">Sign in</a>
+                </small>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- right box  -->
+        <div
+          class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column right-box"
+          style="background-color: blueviolet"
+        >
+          <div class="featured-image">
+            <img
+              src="../img/login/model2.png"
+              class="img-fluid rounded-4"
+              style="width: 250px; height: 250px"
+            />
+          </div>
+          <p
+            class="text-white fs-2"
+            style="
+              font-family: 'Courier New', Courier, monospace;
+              font-weight: 600;
+            "
+          >
+            Be Verified
+          </p>
+          <button
+            class="btn text-center tieptuc"
+            onclick="location.href='../html/index.html';"
+          >
+            Tiếp tục mà không cần đăng nhập
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Function to generate random CAPTCHA code
+    function generateCaptcha() {
+      const characters =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      let captcha = "";
+      for (let i = 0; i < 6; i++) {
+        captcha += characters.charAt(
+          Math.floor(Math.random() * characters.length)
+        );
+      }
+      document.getElementById("captcha-code").innerText = captcha; // Display CAPTCHA
+    }
+
+    // Load CAPTCHA when the page loads
+    window.addEventListener("load", function () {
+      generateCaptcha(); // Generate CAPTCHA on page load
+    });
+
+    // Refresh CAPTCHA when clicking the button
+    document
+      .getElementById("refresh-captcha")
+      .addEventListener("click", function () {
+        generateCaptcha(); // Generate new CAPTCHA when button is clicked
+      });
+  </script>
+  <script src="../js/signup.js"></script>
+</html>

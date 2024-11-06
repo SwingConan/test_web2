@@ -1,0 +1,543 @@
+/* Nội dung từ login.css */
+body {
+  background: linear-gradient(
+    135deg,
+    #000000,
+    #4b0082
+  ); /* Gradient từ đen sang tím */
+}
+
+.box-area {
+  width: 930px;
+}
+
+.right-box {
+  padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+.alert {
+  opacity: 0; /* Bắt đầu với độ mờ 0 */
+  transition: opacity 0.5s ease; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+.alert.show {
+  opacity: 1; /* Đặt độ mờ thành 1 khi hiển thị */
+}
+
+/* Nội dung từ style.css */
+.header-content {
+  background: linear-gradient(to bottom, #10061f, #1e0b37);
+  padding: 10px 0;
+}
+.header-menu {
+  background-color: #1e0b37;
+}
+.header-menu .nav-link {
+  color: white;
+  padding: 15px 20px;
+}
+.header-menu .nav-link:hover {
+  border-bottom: 2px solid gold;
+}
+.mega-dropdown .dropdown-menu {
+  width: 100vw; /* Full viewport width */
+  left: 50%; /* Start from the middle of Products link */
+  transform: translateX(-35%);
+  padding: 1rem 0;
+  margin: 0;
+  background-color: #1e0b37;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* When hovering on the nav-item */
+.nav-item:hover .dropdown-menu {
+  max-height: 500px; /* Adjust based on the content height */
+  opacity: 1;
+  visibility: visible;
+}
+
+.mega-menu .dropdown-header {
+  color: #f1c40f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mega-menu .dropdown-item {
+  color: #fff;
+}
+
+.mega-menu .dropdown-item:hover {
+  color: #f1c40f; /* Hover effect */
+}
+
+.mega-menu ul {
+  padding-left: 0;
+}
+
+.mega-menu ul li {
+  list-style: none;
+}
+.products1 {
+  background-color: #210545;
+}
+/* CSS cho hiệu ứng thu nhỏ */
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(0.9); /* Thu nhỏ ảnh khi di chuột */
+}
+.card-title {
+  height: 70px;
+}
+
+.cart-btn {
+  padding: 4px 8px;
+  border: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+  color: rgb(220, 53, 69);
+  transform: scale(1.2);
+}
+
+.cart-btn i {
+  font-size: 1.2rem;
+}
+footer {
+  background: linear-gradient(to bottom, #1e0b37, #10061f);
+}
+
+/* Nội dung từ product_detail.css */
+.product-pricing {
+  font-size: 1.2rem;
+}
+
+#product-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f6e7f1;
+}
+#product-price-sale {
+  color: #eca2a2;
+}
+#discount-percentage {
+  font-size: 1rem;
+  color: #f3def5;
+}
+.sale_rate {
+  display: inline;
+  border-radius: 10px;
+  padding: 4px;
+  background-color: #924dbf;
+}
+.muangay {
+  background-color: #9575cc;
+  border: none;
+  width: 30%;
+}
+.muangay:hover {
+  background-color: #924dbf;
+}
+.themgiohang {
+  background-color: #c080c2;
+  border: none;
+  width: 30%;
+}
+.themgiohang:hover {
+  background-color: #bd62c0;
+}
+.mota {
+  color: #f6e7f1;
+}
+#product-img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.product-description h5 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.product-description p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Nội dung từ signup.css */
+.left-box {
+  padding: 40px 40px 30px 40px;
+}
+
+.error-message {
+  display: none;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: #dc3545;
+}
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.password-toggle:hover {
+  color: #495057;
+}
+
+/* cart-badge */
+#cart-badge {
+  position: absolute;
+  top: 9px;
+  background-color: #634087;
+  color: #dec8f0;
+}
+
+/* màu Describe */
+.Describe {
+  color: #deb7ff;
+  text-shadow: #4c267e;
+  text-shadow: 2px 2px 10px #1f0246;
+}
+/* tổng tiền */
+#cartTotal {
+  color: #c785ec;
+  font-size: 30px;
+  text-shadow: 2px 2px 10px #1f0246;
+}
+/* thiết kế cho bảng cart-table */
+.custom-table {
+  border-radius: 10px; /* Thay đổi giá trị này để điều chỉnh độ bo góc */
+  overflow: hidden; /* Đảm bảo rằng các góc được bo tròn đúng cách */
+  transition: border-radius 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.custom-table input[type="number"] {
+  min-width: 60px;
+}
+
+.custom-table img {
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* nút tiếp tục mua sắm và thanh toán */
+.tieptucmuasam {
+  width: 160px;
+  background-color: #6b66c6;
+  color: #fbeeff;
+}
+.thanhtoan {
+  width: 160px;
+  background-color: #b148d2;
+  color: #fbeeff;
+}
+.tieptucmuasam:hover {
+  background-color: #fbeeff;
+  color: #6b66c6;
+}
+.thanhtoan:hover {
+  background-color: #fbeeff;
+  color: #b148d2;
+}
+
+/* điều khoản trong term.html */
+.term {
+  background-color: #4c267e;
+  color: rgb(231, 226, 230);
+  text-align: justify;
+}
+
+/* chỉnh thẻ card cho nội dung của các News trong News.html */
+/* Styles cho card tin tức */
+.news-card {
+  transition: all 0.8s ease-out; /* Tăng thời gian transition lên 0.8s */
+  cursor: pointer;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Bắt đầu với opacity 0 */
+  transform: translateY(30px); /* Tăng khoảng cách transform */
+}
+
+.news-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiệu ứng cho hình ảnh */
+.news-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.news-card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* Styling cho nội dung card */
+.news-card .card-body {
+  padding: 1.5rem;
+}
+
+.news-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e0b37;
+}
+
+.news-card .card-text {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+  
+/* Styling cho nút Read More */
+.news-card .btn-read-more {
+  background: linear-gradient(to right, #1e0b37, #592986);
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.news-card .btn-read-more:hover {
+  background: linear-gradient(to right, #592986, #1e0b37);
+  transform: translateX(5px);
+}
+
+/* Category badge */
+.news-category {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(89, 41, 134, 0.8);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+/* Filter buttons */
+.news-filters {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid #592986;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #592986;
+  color: white;
+}
+
+/* Container styles */
+#newsContainer {
+  min-height: 400px; /* Đảm bảo container luôn có chiều cao tối thiểu */
+}
+
+/* About Us Page Styles */
+.about-us-content {
+  background-color: #5a3082;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+
+.our-story {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.about-us-content h1,
+.about-us-content h2 {
+  color: #fbeeff;
+  margin-bottom: 20px;
+}
+
+.about-us-content p {
+  color: #fbeeff;
+  line-height: 1.6;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 5px solid #592986;
+}
+
+.team-member h3 {
+  color: #fbeeff;
+  margin-bottom: 5px;
+}
+
+.contact-us ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-us li {
+  margin-bottom: 10px;
+  color: #fbeeff;
+}
+
+/* Animation */
+.about-us-content {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-member img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* CSS cho trang liên hệ contact.html */
+.contact-section {
+  background-color: #592986;
+  border-radius: 15px;
+  padding: 40px;
+  margin-top: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.contact-form label {
+  color: #fbeeff;
+  font-weight: bold;
+}
+.contact-form .form-control {
+  border-color: #fbeeff;
+}
+.contact-form .btn-primary {
+  background-color: #b768bd;
+  border: none;
+  width: 100px;
+}
+.contact-form .btn-primary:hover {
+  background-color: #1a2c54;
+  border-color: #1e0b37;
+}
+.contact-info {
+  background-color: #b768bd;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 90px;
+}
+.contact-info h3 {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.contact-info p {
+  margin-bottom: 15px;
+}
+.contact-info i {
+  margin-right: 10px;
+  color: #1e0b37;
+}
+
+/* thông báo nhập vào form trang contact.html */
+.mb-3.error .form-control {
+  border-color: #dc3545;
+}
+
+.mb-3.success .form-control {
+  border-color: #198754;
+}
+
+.text-danger {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 0.75;
+}
+
+.contact-form .form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.contact-form .btn-primary {
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* tiếp tục không cần đăng nhập trang login */
+.tieptuc {
+  padding: 10px;
+  width: 17rem;
+  color: white;
+  border: 2px solid;
+}
+.tieptuc:hover {
+  background-color: white;
+  color: rgb(138, 43, 226);
+}

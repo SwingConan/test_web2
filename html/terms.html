@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-icons-1.11.3\font\bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-icons-1.11.3\font\bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div
+      class="container-fluid g-0"
+      style="background: linear-gradient(to bottom, #1e0b37, #592986, #1e0b37)"
+    >
+      <header>
+        <!-- Header Content -->
+        <div class="header-content">
+          <div class="container">
+            <div class="row align-items-center" style="height: 100px">
+              <!-- Logo -->
+              <div class="col-md-2" style="position: relative">
+                <a href="index.html">
+                  <img
+                    src="../img/logo/DL_Logo.png"
+                    alt="Cosmetics Store Logo"
+                    style="position: absolute; top: -75px; width: 200px"
+                  />
+                </a>
+              </div>
+
+              <!-- Search Bar -->
+              <div class="col-md-5">
+                <form class="form position-relative">
+                  <input
+                    class="form-control pe-5"
+                    type="search"
+                    placeholder="Search for Cosmetics..."
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn position-absolute top-50 end-0 translate-middle-y"
+                    type="submit"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+
+              <!-- Hotline, User Icon, Cart Icon -->
+              <div class="col-md-2 text-center pt-2">
+                <!-- Hotline -->
+                <p class="text-white">
+                  Hotline: <br />
+                  032.911.0917
+                </p>
+              </div>
+              <div class="col-2" id="user-info" style="display: none">
+                <!-- Thông tin người dùng -->
+                <span class="text-white mr-4" id="welcome-message">
+                  Chào mừng, <span id="user-name"></span>
+                </span>
+              </div>
+              <div class="col-2" id="login-register">
+                <!-- User Icon (Login/Register) -->
+                <span class="text-white mr-4">
+                  <i class="bi bi-person"></i>
+                  <a href="../html/login.html" class="btn text-white"
+                    >Login/Register</a
+                  >
+                </span>
+              </div>
+              <div class="col-1" style="position: relative">
+                <span class="text-white">
+                  <i class="bi bi-cart"></i>
+                  <a href="../html/cart.html" class="btn text-white">Cart</a>
+                  <span id="cart-badge" class="badge"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header Menu -->
+        <nav class="header-menu">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown mega-dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="productsDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Products
+                    </a>
+                    <div
+                      class="dropdown-menu mega-menu p-3"
+                      aria-labelledby="productsDropdown"
+                    >
+                      <div class="container-fluid">
+                        <div class="row">
+                          <!-- Subcategory 1 -->
+                          <div class="col-md-4">
+                            <h6 class="dropdown-header">Skincare</h6>
+                            <ul class="list-unstyled">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="../html/serum.html"
+                                  >Serum</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="../html/cleansers.html"
+                                  >Cleansers</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- Subcategory 2 -->
+                          <div class="col-md-4">
+                            <h6 class="dropdown-header">Bodycare</h6>
+                            <ul class="list-unstyled">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="../html/perfume.html"
+                                  >Perfume</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- Subcategory 3 -->
+                          <div class="col-md-4">
+                            <h6 class="dropdown-header">Hair Care</h6>
+                            <ul class="list-unstyled">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="../html/shampoos.html"
+                                  >Shampoos</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/terms.html">Terms</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/sitemap.html">SiteMap</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Nội dung chính của trang Terms of Service -->
+      <main class="container my-5">
+        <h1 class="text-white text-center mb-4">Terms of Service</h1>
+
+        <div class="term p-4 rounded">
+          <h2>1. Giới thiệu về DL-Cosmetics</h2>
+          <p>
+            DL-Cosmetics là một trang web bán mỹ phẩm trực tuyến, cung cấp các
+            sản phẩm làm đẹp, chăm sóc da và chăm sóc cơ thể chất lượng cao từ
+            các thương hiệu uy tín. Mục tiêu của chúng tôi là mang đến cho khách
+            hàng những sản phẩm chất lượng nhất và dịch vụ tốt nhất để chăm sóc
+            sắc đẹp toàn diện.
+          </p>
+          <hr />
+          <h2>2. Chấp nhận điều khoản</h2>
+          <p>
+            Khi sử dụng trang web DL-Cosmetics, bạn đồng ý với các điều khoản sử
+            dụng được quy định tại đây. Nếu bạn không đồng ý với bất kỳ điều
+            khoản nào, vui lòng không tiếp tục truy cập hoặc sử dụng trang web
+            của chúng tôi.
+          </p>
+          <hr />
+          <h2>3. Quyền sở hữu trí tuệ</h2>
+          <p>
+            Tất cả nội dung trên trang web này, bao gồm nhưng không giới hạn ở
+            văn bản, hình ảnh, biểu tượng, đồ họa, thiết kế và mã nguồn, đều
+            thuộc quyền sở hữu của DL-Cosmetics hoặc các bên thứ ba mà chúng tôi
+            có thỏa thuận. Bạn không được sao chép, tái xuất bản, phân phối, hay
+            sử dụng bất kỳ nội dung nào trên trang web mà không có sự cho phép
+            bằng văn bản từ DL-Cosmetics.
+          </p>
+          <hr />
+          <h2>4. Tài khoản người dùng</h2>
+          <p>
+            Để mua sắm trên DL-Cosmetics, bạn có thể cần phải tạo một tài khoản
+            cá nhân. Bạn có trách nhiệm bảo mật thông tin tài khoản và mật khẩu
+            của mình, cũng như đảm bảo rằng các thông tin cung cấp khi tạo tài
+            khoản là chính xác và đầy đủ. DL-Cosmetics không chịu trách nhiệm về
+            bất kỳ thiệt hại nào phát sinh từ việc sử dụng tài khoản trái phép
+            nếu do lỗi của bạn.
+          </p>
+          <hr />
+          <h2>5. Chính sách mua hàng</h2>
+          <p>
+            Khi mua hàng trên DL-Cosmetics, bạn đồng ý với các chính sách sau:
+          </p>
+          <ul>
+            <li>
+              <span style="font-weight: bold">Đặt hàng:</span> Sau khi đặt hàng,
+              bạn sẽ nhận được email xác nhận đơn hàng. Chúng tôi sẽ xử lý đơn
+              hàng của bạn trong thời gian sớm nhất có thể.
+            </li>
+            <li>
+              <span style="font-weight: bold">Thanh toán:</span> Chúng tôi chấp
+              nhận nhiều hình thức thanh toán như thẻ tín dụng, chuyển khoản
+              ngân hàng và thanh toán khi nhận hàng. Các chi tiết thanh toán của
+              bạn sẽ được bảo mật tuyệt đối.
+            </li>
+            <li>
+              <span style="font-weight: bold">Vận chuyển:</span> Thời gian giao
+              hàng sẽ được thông báo dựa trên địa chỉ nhận hàng của bạn.
+              DL-Cosmetics không chịu trách nhiệm về bất kỳ sự chậm trễ nào phát
+              sinh từ bên dịch vụ vận chuyển.
+            </li>
+            <li>
+              <span style="font-weight: bold">Đổi trả và hoàn tiền:</span> Chúng
+              tôi chấp nhận đổi trả sản phẩm trong vòng 7 ngày kể từ khi bạn
+              nhận hàng, với điều kiện sản phẩm chưa qua sử dụng và còn nguyên
+              bao bì. Bạn có thể tham khảo chi tiết chính sách đổi trả và hoàn
+              tiền tại trang "Chính sách Đổi trả".
+            </li>
+          </ul>
+          <hr />
+          <h2>6. Quyền riêng tư</h2>
+          <p>
+            DL-Cosmetics cam kết bảo vệ quyền riêng tư và bảo mật thông tin cá
+            nhân của bạn. Chúng tôi chỉ thu thập những thông tin cần thiết để
+            cung cấp dịch vụ và sẽ không chia sẻ thông tin cá nhân của bạn với
+            bên thứ ba mà không có sự đồng ý của bạn, ngoại trừ các trường hợp
+            cần thiết để thực hiện đơn hàng (ví dụ: cung cấp thông tin cho đơn
+            vị vận chuyển).
+          </p>
+          <hr />
+          <h2>7. Chính sách bảo mật</h2>
+          <p>
+            Trang web DL-Cosmetics sử dụng các biện pháp bảo mật hiện đại để bảo
+            vệ thông tin cá nhân và giao dịch của khách hàng. Tuy nhiên, bạn
+            hiểu và đồng ý rằng không có phương pháp truyền tải hoặc lưu trữ dữ
+            liệu nào qua Internet có thể đảm bảo an toàn tuyệt đối. DL-Cosmetics
+            không chịu trách nhiệm cho bất kỳ thiệt hại nào phát sinh từ việc
+            mất mát dữ liệu hay xâm phạm an ninh, trừ khi điều đó là do lỗi cố ý
+            hoặc sự sơ suất nghiêm trọng từ phía chúng tôi.
+          </p>
+          <hr />
+          <h2>8. Trách nhiệm của khách hàng</h2>
+          <p>Khi sử dụng trang web DL-Cosmetics, bạn cam kết:</p>
+          <ul>
+            <li>
+              Không sử dụng trang web này cho bất kỳ mục đích bất hợp pháp hoặc
+              gây hại nào.
+            </li>
+            <li>Không can thiệp vào hoạt động hoặc nội dung của trang web.</li>
+            <li>
+              Cung cấp thông tin chính xác và đầy đủ khi tạo tài khoản và đặt
+              hàng.
+            </li>
+          </ul>
+          <hr />
+          <h2>9. Giới hạn trách nhiệm</h2>
+          <p>
+            DL-Cosmetics không chịu trách nhiệm đối với bất kỳ thiệt hại nào
+            phát sinh từ việc sử dụng trang web hoặc các sản phẩm mua từ
+            DL-Cosmetics, bao gồm nhưng không giới hạn ở các thiệt hại trực
+            tiếp, gián tiếp, ngẫu nhiên, hoặc thiệt hại hậu quả, ngoại trừ
+            trường hợp những thiệt hại đó là do lỗi cố ý hoặc sự sơ suất nghiêm
+            trọng từ phía chúng tôi.
+          </p>
+          <hr />
+          <h2>10. Liên kết đến trang web bên thứ ba</h2>
+          <p>
+            Trang web DL-Cosmetics có thể chứa liên kết đến các trang web của
+            bên thứ ba mà chúng tôi không kiểm soát. Chúng tôi không chịu trách
+            nhiệm về nội dung, chính sách bảo mật hay hoạt động của các trang
+            web đó. Bạn nên đọc kỹ điều khoản sử dụng của bất kỳ trang web nào
+            mà bạn truy cập thông qua các liên kết từ DL-Cosmetics.
+          </p>
+          <hr />
+          <h2>11. Sửa đổi điều khoản</h2>
+          <p>
+            DL-Cosmetics có quyền sửa đổi và cập nhật các điều khoản sử dụng này
+            bất kỳ lúc nào mà không cần thông báo trước. Bạn có trách nhiệm kiểm
+            tra thường xuyên để cập nhật những thay đổi này. Việc bạn tiếp tục
+            sử dụng trang web sau khi điều khoản được cập nhật có nghĩa là bạn
+            đồng ý với các thay đổi đó.
+          </p>
+          <hr />
+          <h2>12. Liên hệ</h2>
+          <p>
+            Nếu bạn có bất kỳ câu hỏi nào về điều khoản sử dụng hoặc chính sách
+            của chúng tôi, vui lòng liên hệ với DL-Cosmetics qua email:
+            Loivale.ag@gmail.com hoặc qua hotline: 0329.110.917.
+          </p>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="text-white mt-5 pt-4 pb-2">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4">
+              <h4 class="pb-2">Contact Information</h4>
+              <h6>Address: 68 Bui Thi Xuan Street, District Tan Binh, HCMC</h6>
+              <p>Industrial University of Ho Chi Minh City</p>
+              <p>Email: Loivale.ag@gmail.com</p>
+              <p>Phone: 0329110917</p>
+            </div>
+            <div class="col-md-4 pt-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">Products</a></li>
+                <li><a href="#" class="text-white">News</a></li>
+                <li><a href="#" class="text-white">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 pt-5">
+              <h5>Social Media</h5>
+              <a
+                href="https://www.facebook.com/SwingConan"
+                class="text-white me-3"
+                target="_blank"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/_swingconan_/"
+                class="text-white me-3"
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://x.com/" target="_blank" class="text-white"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <hr class="bg-white" />
+          <p class="mb-0">
+            © 2024 DL Cosmetics. All rights reserved by DL Cosmetics Company
+            Ltd.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../js/index.js"></script>
+  <script src="../js/product.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/auth.js"></script>
+</html>
