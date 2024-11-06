@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Skincare</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.png">
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link
@@ -201,97 +201,47 @@
         </nav>
       </header>
 
-      <!-- Carosel -->
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col-12">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner rounded-1">
-                <div class="carousel-item active">
-                  <img
-                    src="../img/slider/slider1.jpg"
-                    class="d-block w-100"
-                    alt="Slide 1"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="../img/slider/slider2.jpg"
-                    class="d-block w-100"
-                    alt="Slide 2"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- section -->
       <div class="section mt-5">
         <div class="container products1 rounded-3">
-          <h2 class="Describe pt-3 ps-3">Sản phẩm hot</h2>
+          <h2 class="Describe pt-3 ps-3">Skincare (Sản phẩm chăm sóc da)</h2>
           <div class="row row-cols-4 g-4 p-3 pb-5">
-            <!-- sản phẩm 1 -->
+            <!-- Serum products -->
+            <!-- sản phẩm 1 (id: 5) - Cocoon -->
             <div class="col">
               <div class="card">
                 <a
                   href="#"
-                  onclick="window.location.href = getProductDetailUrl(1); return false;"
+                  onclick="window.location.href = getProductDetailUrl(5); return false;"
                 >
                   <img
-                    src="../img/product/simple.png"
+                    src="../img/product/cocoon.png"
                     class="card-img-top"
-                    alt="..."
+                    alt="Cocoon Tinh chất nghệ Hưng Yên Turmeric Serum C10 30ml"
                   />
                 </a>
                 <div class="card-body">
                   <h5 class="card-title">
                     <a
                       href="#"
-                      onclick="window.location.href = getProductDetailUrl(1); return false;"
+                      onclick="window.location.href = getProductDetailUrl(5); return false;"
                       style="text-decoration: none"
-                      >Simple Gel Rửa Mặt Purifying Gel Wash Shine-Free And
-                      Clear Skin 150ml</a
+                      >Cocoon Tinh chất nghệ Hưng Yên Turmeric Serum C10 30ml</a
                     >
                   </h5>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <p class="card-text mb-0">
-                      <span class="text-danger fs-5 fw-bold">100,320₫</span>
+                      <span class="text-danger fs-5 fw-bold">292,500đ</span>
                       <span class="text-muted text-decoration-line-through"
-                        >132,000₫</span
+                        >325,000đ</span
                       >
                     </p>
                     <button
                       class="btn cart-btn"
                       title="Thêm vào giỏ hàng"
-                      data-id="1"
+                      data-id="5"
                     >
                       <i class="bi bi-cart-plus"></i>
                     </button>
@@ -300,41 +250,42 @@
               </div>
             </div>
 
-            <!-- sản phẩm 2 -->
+            <!-- sản phẩm 2 (id: 6) - About Me -->
             <div class="col">
               <div class="card">
                 <a
                   href="#"
-                  onclick="window.location.href = getProductDetailUrl(3); return false;"
+                  onclick="window.location.href = getProductDetailUrl(6); return false;"
                 >
                   <img
-                    src="../img/product/rice.png"
+                    src="../img/product/about_me.png"
                     class="card-img-top"
-                    alt="..."
+                    alt="About Me Tinh chất dưỡng trắng Kakadu C Dark Spot Serum 50ml"
                   />
                 </a>
                 <div class="card-body">
                   <h5 class="card-title">
                     <a
                       href="#"
-                      onclick="window.location.href = getProductDetailUrl(3); return false;"
+                      onclick="window.location.href = getProductDetailUrl(6); return false;"
                       style="text-decoration: none"
-                      >ON:THE BODY Sữa rửa mặt Rice therapy Cleanser 150ml</a
+                      >About Me Tinh chất dưỡng trắng Kakadu C Dark Spot Serum
+                      50ml</a
                     >
                   </h5>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <p class="card-text mb-0">
-                      <span class="text-danger fs-5 fw-bold">108,750₫</span>
+                      <span class="text-danger fs-5 fw-bold">364,000đ</span>
                       <span class="text-muted text-decoration-line-through"
-                        >145,000₫</span
+                        >560,000đ</span
                       >
                     </p>
                     <button
                       class="btn cart-btn"
                       title="Thêm vào giỏ hàng"
-                      data-id="3"
+                      data-id="6"
                     >
                       <i class="bi bi-cart-plus"></i>
                     </button>
@@ -343,101 +294,7 @@
               </div>
             </div>
 
-            <!-- sản phẩm 3 -->
-            <div class="col">
-              <div class="card">
-                <a
-                  href="#"
-                  onclick="window.location.href = getProductDetailUrl(10); return false;"
-                >
-                  <img
-                    src="../img/product/fragrance.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a
-                      href="#"
-                      onclick="window.location.href = getProductDetailUrl(10); return false;"
-                      style="text-decoration: none"
-                      >Once Upon A Fragrance Nước hoa (SLGH)</a
-                    >
-                  </h5>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="card-text mb-0">
-                      <span class="text-danger fs-5 fw-bold">792,000₫</span>
-                      <span class="text-muted text-decoration-line-through"
-                        >1,320,000₫</span
-                      >
-                    </p>
-                    <button
-                      class="btn cart-btn"
-                      title="Thêm vào giỏ hàng"
-                      data-id="10"
-                    >
-                      <i class="bi bi-cart-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- sản phẩm 4 -->
-            <div class="col">
-              <div class="card">
-                <a
-                  href="#"
-                  onclick="window.location.href = getProductDetailUrl(17); return false;"
-                >
-                  <img
-                    src="../img/product/the_coocoon.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a
-                      href="#"
-                      onclick="window.location.href = getProductDetailUrl(17); return false;"
-                      style="text-decoration: none"
-                      >Cocoon Gel rửa mặt cà phê Dak Lak 140ml</a
-                    >
-                  </h5>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="card-text mb-0">
-                      <span class="text-danger fs-5 fw-bold">175,500₫</span>
-                      <span class="text-muted text-decoration-line-through"
-                        >195,000₫</span
-                      >
-                    </p>
-                    <button
-                      class="btn cart-btn"
-                      title="Thêm vào giỏ hàng"
-                      data-id="17"
-                    >
-                      <i class="bi bi-cart-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- section -->
-      <div class="section mt-5">
-        <div class="container products1 rounded-3">
-          <h2 class="Describe pt-3 ps-3">Có thể bạn sẽ thích</h2>
-          <div class="row row-cols-4 g-4 p-3">
-            <!-- Sản phẩm 1 (ID: 7) -->
+            <!-- sản phẩm 3 (id: 7) - Balance -->
             <div class="col">
               <div class="card">
                 <a
@@ -447,7 +304,7 @@
                   <img
                     src="../img/product/balance.png"
                     class="card-img-top"
-                    alt="..."
+                    alt="Balance Active Formula Serum Cấp Nước Dưỡng Ẩm Hyaluronic 30ml"
                   />
                 </a>
                 <div class="card-body">
@@ -481,42 +338,42 @@
               </div>
             </div>
 
-            <!-- Sản phẩm 2 (ID: 11) -->
+            <!-- sản phẩm 4 (id: 8) - Mary&May -->
             <div class="col">
               <div class="card">
                 <a
                   href="#"
-                  onclick="window.location.href = getProductDetailUrl(11); return false;"
+                  onclick="window.location.href = getProductDetailUrl(8); return false;"
                 >
                   <img
-                    src="../img/product/chorus.png"
+                    src="../img/product/Mary_may.png"
                     class="card-img-top"
-                    alt="..."
+                    alt="Mary&May Tinh chất dưỡng da Houttuynia Cordata + Tea Tree Serum 30ml"
                   />
                 </a>
                 <div class="card-body">
                   <h5 class="card-title">
                     <a
                       href="#"
-                      onclick="window.location.href = getProductDetailUrl(11); return false;"
+                      onclick="window.location.href = getProductDetailUrl(8); return false;"
                       style="text-decoration: none"
-                      >Diane Castel Paris Nước hoa Chorus For Men Paris Eau De
-                      Parfum 100ml</a
+                      >Mary&May Tinh chất dưỡng da Houttuynia Cordata + Tea Tree
+                      Serum 30ml</a
                     >
                   </h5>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <p class="card-text mb-0">
-                      <span class="text-danger fs-5 fw-bold">390,000đ</span>
+                      <span class="text-danger fs-5 fw-bold">301,500đ</span>
                       <span class="text-muted text-decoration-line-through"
-                        >650,000đ</span
+                        >450,000đ</span
                       >
                     </p>
                     <button
                       class="btn cart-btn"
                       title="Thêm vào giỏ hàng"
-                      data-id="11"
+                      data-id="8"
                     >
                       <i class="bi bi-cart-plus"></i>
                     </button>
@@ -525,42 +382,43 @@
               </div>
             </div>
 
-            <!-- Sản phẩm 3 (ID: 14) -->
+            <!-- Cleanser products -->
+            <!-- sản phẩm 5 (id: 1) - Simple -->
             <div class="col">
               <div class="card">
                 <a
                   href="#"
-                  onclick="window.location.href = getProductDetailUrl(14); return false;"
+                  onclick="window.location.href = getProductDetailUrl(1); return false;"
                 >
                   <img
-                    src="../img/product/tsubaki.png"
+                    src="../img/product/simple.png"
                     class="card-img-top"
-                    alt="..."
+                    alt="Simple Gel Rửa Mặt Purifying Gel Wash Shine-Free And Clear Skin 150ml"
                   />
                 </a>
                 <div class="card-body">
                   <h5 class="card-title">
                     <a
                       href="#"
-                      onclick="window.location.href = getProductDetailUrl(14); return false;"
+                      onclick="window.location.href = getProductDetailUrl(1); return false;"
                       style="text-decoration: none"
-                      >Dầu gội dưỡng tóc bóng mượt Tsubaki Premium Moist Shampoo
-                      490ml</a
+                      >Simple Gel Rửa Mặt Purifying Gel Wash Shine-Free And
+                      Clear Skin 150ml</a
                     >
                   </h5>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <p class="card-text mb-0">
-                      <span class="text-danger fs-5 fw-bold">166,000 đ</span>
+                      <span class="text-danger fs-5 fw-bold">100,320₫</span>
                       <span class="text-muted text-decoration-line-through"
-                        >215,000đ</span
+                        >132,000₫</span
                       >
                     </p>
                     <button
                       class="btn cart-btn"
                       title="Thêm vào giỏ hàng"
-                      data-id="14"
+                      data-id="1"
                     >
                       <i class="bi bi-cart-plus"></i>
                     </button>
@@ -569,7 +427,7 @@
               </div>
             </div>
 
-            <!-- Sản phẩm 4 (ID: 2) -->
+            <!-- sản phẩm 6 (id: 2) - Le Nord -->
             <div class="col">
               <div class="card">
                 <a
@@ -579,7 +437,7 @@
                   <img
                     src="../img/product/le_nord.png"
                     class="card-img-top"
-                    alt="..."
+                    alt="Le Nord Sữa rửa mặt cho nam Mountain Green Facial Wash - 100g"
                   />
                 </a>
                 <div class="card-body">
@@ -612,201 +470,96 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Các sản phẩm ẩn ban đầu -->
-          <div class="collapse" id="moreProducts">
-            <div class="row row-cols-4 g-4 mt-1 p-3 pt-0">
-              <!-- Sản phẩm 5 (ID: 8) -->
-              <div class="col">
-                <div class="card">
-                  <a
-                    href="#"
-                    onclick="window.location.href = getProductDetailUrl(8); return false;"
-                  >
-                    <img
-                      src="../img/product/Mary_may.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a
-                        href="#"
-                        onclick="window.location.href = getProductDetailUrl(8); return false;"
-                        style="text-decoration: none"
-                        >Mary&May Tinh chất dưỡng da Houttuynia Cordata + Tea
-                        Tree Serum 30ml</a
-                      >
-                    </h5>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
+            <!-- sản phẩm 7 (id: 3) - ON THE BODY -->
+            <div class="col">
+              <div class="card">
+                <a
+                  href="#"
+                  onclick="window.location.href = getProductDetailUrl(3); return false;"
+                >
+                  <img
+                    src="../img/product/rice.png"
+                    class="card-img-top"
+                    alt="ON:) THE BODY Sữa rửa mặt Rice therapy Cleanser 150ml"
+                  />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a
+                      href="#"
+                      onclick="window.location.href = getProductDetailUrl(3); return false;"
+                      style="text-decoration: none"
+                      >ON:) THE BODY Sữa rửa mặt Rice therapy Cleanser 150ml</a
                     >
-                      <p class="card-text mb-0">
-                        <span class="text-danger fs-5 fw-bold">301,500đ</span>
-                        <span class="text-muted text-decoration-line-through"
-                          >450,000đ</span
-                        >
-                      </p>
-                      <button
-                        class="btn cart-btn"
-                        title="Thêm vào giỏ hàng"
-                        data-id="8"
+                  </h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="card-text mb-0">
+                      <span class="text-danger fs-5 fw-bold">108,750đ</span>
+                      <span class="text-muted text-decoration-line-through"
+                        >145,000đ</span
                       >
-                        <i class="bi bi-cart-plus"></i>
-                      </button>
-                    </div>
+                    </p>
+                    <button
+                      class="btn cart-btn"
+                      title="Thêm vào giỏ hàng"
+                      data-id="3"
+                    >
+                      <i class="bi bi-cart-plus"></i>
+                    </button>
                   </div>
                 </div>
               </div>
-              <!-- Sản phẩm 6 (ID: 15) -->
-              <div class="col">
-                <div class="card">
-                  <a
-                    href="#"
-                    onclick="window.location.href = getProductDetailUrl(15); return false;"
-                  >
-                    <img
-                      src="../img/product/beyond.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a
-                        href="#"
-                        onclick="window.location.href = getProductDetailUrl(15); return false;"
-                        style="text-decoration: none"
-                        >Beyond Dầu gội Professional Defense Shampoo 500ml</a
-                      >
-                    </h5>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <p class="card-text mb-0">
-                        <span class="text-danger fs-5 fw-bold">465,000đ</span>
-                        <span class="text-muted text-decoration-line-through"
-                          >620,000đ</span
-                        >
-                      </p>
-                      <button
-                        class="btn cart-btn"
-                        title="Thêm vào giỏ hàng"
-                        data-id="15"
-                      >
-                        <i class="bi bi-cart-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Sản phẩm 7 (ID: 4) -->
-              <div class="col">
-                <div class="card">
-                  <a
-                    href="#"
-                    onclick="window.location.href = getProductDetailUrl(4); return false;"
-                  >
-                    <img
-                      src="../img/product/eucerin.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a
-                        href="#"
-                        onclick="window.location.href = getProductDetailUrl(4); return false;"
-                        style="text-decoration: none"
-                        >Eucerin Gel rửa mặt Acne-oil Control Pro Acne Solution
-                        Cleansing Gel 75ml</a
-                      >
-                    </h5>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <p class="card-text mb-0">
-                        <span class="text-danger fs-5 fw-bold">188,100đ</span>
-                        <span class="text-muted text-decoration-line-through"
-                          >209,000đ</span
-                        >
-                      </p>
-                      <button
-                        class="btn cart-btn"
-                        title="Thêm vào giỏ hàng"
-                        data-id="4"
-                      >
-                        <i class="bi bi-cart-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
 
-              <!-- Sản phẩm 8 (ID: 6) -->
-              <div class="col">
-                <div class="card">
-                  <a
-                    href="#"
-                    onclick="window.location.href = getProductDetailUrl(6); return false;"
-                  >
-                    <img
-                      src="../img/product/about_me.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a
-                        href="#"
-                        onclick="window.location.href = getProductDetailUrl(6); return false;"
-                        style="text-decoration: none"
-                        >About Me Tinh chất dưỡng trắng Kakadu C Dark Spot Serum
-                        50ml</a
-                      >
-                    </h5>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
+            <!-- sản phẩm 8 (id: 4) - Eucerin -->
+            <div class="col">
+              <div class="card">
+                <a
+                  href="#"
+                  onclick="window.location.href = getProductDetailUrl(4); return false;"
+                >
+                  <img
+                    src="../img/product/eucerin.png"
+                    class="card-img-top"
+                    alt="Eucerin Gel rửa mặt Acne-oil Control Pro Acne Solution Cleansing Gel 75ml"
+                  />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a
+                      href="#"
+                      onclick="window.location.href = getProductDetailUrl(4); return false;"
+                      style="text-decoration: none"
+                      >Eucerin Gel rửa mặt Acne-oil Control Pro Acne Solution
+                      Cleansing Gel 75ml</a
                     >
-                      <p class="card-text mb-0">
-                        <span class="text-danger fs-5 fw-bold">156,000đ</span>
-                        <span class="text-muted text-decoration-line-through"
-                          >195,000đ</span
-                        >
-                      </p>
-                      <button
-                        class="btn cart-btn"
-                        title="Thêm vào giỏ hàng"
-                        data-id="6"
+                  </h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="card-text mb-0">
+                      <span class="text-danger fs-5 fw-bold">188,100đ</span>
+                      <span class="text-muted text-decoration-line-through"
+                        >209,000đ</span
                       >
-                        <i class="bi bi-cart-plus"></i>
-                      </button>
-                    </div>
+                    </p>
+                    <button
+                      class="btn cart-btn"
+                      title="Thêm vào giỏ hàng"
+                      data-id="4"
+                    >
+                      <i class="bi bi-cart-plus"></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Nút "Xem thêm" -->
-          <div class="text-center mt-3">
-            <button
-              id="toggleButton"
-              class="btn btn-outline-light mb-4"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#moreProducts"
-            >
-              Xem thêm
-            </button>
-          </div>
         </div>
       </div>
-
       <!-- footer -->
       <footer class="text-white mt-5 pt-4 pb-2">
         <div class="container text-center">

@@ -32,19 +32,28 @@ body {
   background: linear-gradient(to bottom, #10061f, #1e0b37);
   padding: 10px 0;
 }
+
 .header-menu {
   background-color: #1e0b37;
 }
+
 .header-menu .nav-link {
   color: white;
   padding: 15px 20px;
 }
+
 .header-menu .nav-link:hover {
   border-bottom: 2px solid gold;
 }
+
+.mega-dropdown {
+  position: relative; /* Thêm dòng này */
+}
+
 .mega-dropdown .dropdown-menu {
+  position: absolute; 
   width: 100vw; /* Full viewport width */
-  left: 50%; /* Start from the middle of Products link */
+  left: 50%; 
   transform: translateX(-35%);
   padding: 1rem 0;
   margin: 0;
@@ -56,11 +65,12 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 1000; /* Thêm dòng này */
 }
 
-/* When hovering on the nav-item */
-.nav-item:hover .dropdown-menu {
-  max-height: 500px; /* Adjust based on the content height */
+/* Khi hover vào mega-dropdown */
+.mega-dropdown:hover .dropdown-menu {
+  max-height: 500px; /* Điều chỉnh dựa trên chiều cao nội dung */
   opacity: 1;
   visibility: visible;
 }
@@ -76,7 +86,7 @@ body {
 }
 
 .mega-menu .dropdown-item:hover {
-  color: #f1c40f; /* Hover effect */
+  color: #f1c40f; /* Hiệu ứng hover */
 }
 
 .mega-menu ul {
@@ -86,6 +96,7 @@ body {
 .mega-menu ul li {
   list-style: none;
 }
+
 .products1 {
   background-color: #210545;
 }
@@ -327,7 +338,7 @@ footer {
   font-size: 0.9rem;
   line-height: 1.5;
 }
-  
+
 /* Styling cho nút Read More */
 .news-card .btn-read-more {
   background: linear-gradient(to right, #1e0b37, #592986);
