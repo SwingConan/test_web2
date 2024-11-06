@@ -218,5 +218,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // hàm rút gọn link web
 function getProductDetailUrl(productId) {
-  return `/html/product_detail.html?id=${productId}`;
+  return `../html/product_detail.html?id=${productId}`;
 }
